@@ -6,6 +6,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>AdTraditions</title>
+        <!-- ManyChat -->
+        <script src="//widget.manychat.com/112684663860909.js" async="async"></script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
         <!-- Font Awesome icons (free version)-->
@@ -22,7 +24,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Ad Traditions</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">AD TRADITIONS</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -160,6 +162,7 @@
                 </div>
             </div>
         </div>
+        <!--Messenger-->
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -186,6 +189,30 @@
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Ad Traditions</div></div>
+             <!-- Load Facebook SDK for JavaScript -->
+             <div id="fb-root"></div>
+             <script>
+                 window.fbAsyncInit = function() {
+                 FB.init({
+                     xfbml            : true,
+                     version          : 'v7.0'
+                 });
+                 };
+ 
+                 (function(d, s, id) {
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) return;
+                 js = d.createElement(s); js.id = id;
+                 js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                 fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));</script>
+ 
+             <!-- Your Chat Plugin code -->
+             <div class="fb-customerchat"
+                 attribution=install_email
+                 page_id="112684663860909"
+         theme_color="#069ed1">
+             </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
